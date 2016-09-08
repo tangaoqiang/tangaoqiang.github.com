@@ -8,23 +8,29 @@
 	font-family:'微软雅黑';
 	color:#666;
 }
-.nav_top span{
-	margin-left:900px;
+.nav_top .nav_top2{
+	width:420px;
+	height:36px;
+	margin-left:800px;
+}
+.nav_top .nav_top2 span{
 	height:36px;
 	display:inline-block;
 	line-height:36px;
+	float:left;
 }
-.nav_top i{
+.nav_top .nav_top2 .codeBox{
+	float:right;
 	width:100px;
 	height:36px;
-	display:inline-block;
 	background:url(../images/Sprite.png) no-repeat 0 6px;
 	margin-left:10px;
 	line-height:36px;
 	padding-left:35px;
 	position:relative;
+	cursor:pointer;
 }
-.nav_top i .code{
+.nav_top .codeBox .code{
 	width:100px;
 	height:100px;
 	background:url(../images/Sprite.png) no-repeat 0 -49px;;
@@ -66,6 +72,7 @@
 	font-size:14px;
 	font-family:'微软雅黑';
 	float:left;
+	cursor:pointer;
 }
 .nav span{
 	width:133px;
