@@ -78,8 +78,8 @@ $(function(){
             for(var i=0;i<aS.length;i++){
                 aS[i].style.WebkitTransition = 'none';
                 aS[i].style.WebkitTransform = 'perspective(800px) rotateY(0deg)';
-                aF[i].style.backgroundImage = 'url(img/'+(iNow%3+1)+'.png)';
-                aB[i].style.backgroundImage = 'url(img/'+((iNow+1)%3+1)+'.png)';
+                aF[i].style.backgroundImage = 'url(img/'+(iNow%3+1)+'.jpg)';
+                aB[i].style.backgroundImage = 'url(img/'+((iNow+1)%3+1)+'.jpg)';
 
             }
             bOk = false;

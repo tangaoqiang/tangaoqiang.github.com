@@ -96,7 +96,7 @@
 	box-shadow:inset 0 6px 8px #ccc;
 	width:100%;
 	height:100%;
-	background:url(../images/baner.jpg) no-repeat;
+	background:url(../images/baner.png) no-repeat;
 	overflow:hidden;
 }
 /*菜单*/
@@ -149,7 +149,7 @@
 	top:40px;
 	width:900px;
 	height:460px;
-	background:url("../images/2.png") no-repeat;
+	background:url("../img/2.jpg") no-repeat;
 	box-shadow:10px 10px 10px #000;
 }
 .focus span{
@@ -165,10 +165,10 @@
 	height:100%;
 }
 .focus span .front{
-	background:url("../images/2.png") no-repeat; -webkit-transform:translateZ(1px);
+	background:url("../img/2.jpg") no-repeat; -webkit-transform:translateZ(1px);
 }
 .focus span .back{
-	background:url("../images/3.png") no-repeat; -webkit-transform:translateZ(-1px) scale(-1,1);
+	background:url("../img/3.jpg") no-repeat; -webkit-transform:translateZ(-1px) scale(-1,1);
 }
 .Picture .Picture1 .focus .l{
 	width:40px;
