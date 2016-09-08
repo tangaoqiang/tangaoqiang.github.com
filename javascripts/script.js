@@ -55,7 +55,7 @@ $(function(){
             oS.r = i;
         }
     }
-    var iNow = 0;
+    var iNow = 1;
     var bOk = false;
     var aS = oFocus.getElementsByTagName('span');
     var aF = document.querySelectorAll('.focus span .front');
