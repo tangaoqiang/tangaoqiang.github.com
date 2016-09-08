@@ -4,7 +4,7 @@ function move(obj,target){
 	clearInterval(obj.timer);
 	obj.timer = setInterval(function(){
 		left+=iSpeed;
-		iSpeed+=(target-obj.offsetLeft)/10;
+		iSpeed+=(target-obj.offsetLeft)/7;
 		iSpeed*=0.6;
 		obj.style.left = left+'px';
 		if(Math.round(left) == target&&Math.round(iSpeed)==0){

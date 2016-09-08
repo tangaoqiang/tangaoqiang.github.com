@@ -52,6 +52,7 @@
 	height:100px;
 	border-radius:50%;
 	position:absolute;
+	z-index:999;
 	left:85px;
 	top:-16px;
 	overflow:hidden;
@@ -83,5 +84,115 @@
 	position:absolute;
 	left:200px;
 	top:0;
-
+}
+/*全屏*/
+.Picture{
+	width:100%;
+	height:562px;
+	margin:0 auto 0;
+}
+.Picture .Picture1{
+	position:relative;
+	box-shadow:inset 0 6px 8px #ccc;
+	width:100%;
+	height:100%;
+	background:url(../images/baner.jpg) no-repeat;
+	overflow:hidden;
+}
+/*菜单*/
+.Picture .Picture1 .menu{
+	width:260px;
+	height:460px;
+	background:#3d383e;
+	margin:40px 0 0 38px;
+	overflow:hidden;
+}
+.Picture .Picture1 .menu ul{
+	margin-top:50px;
+}
+.Picture .Picture1 .menu ul li{
+	font-size:15px;
+	color:#fff;
+	font-family:'微软雅黑';
+	line-height:40px;
+	position:relative;
+	width:225px;
+	height:40px;
+	padding-left:50px;
+	letter-spacing:1px;
+	cursor:pointer;
+	margin-bottom:15px;
+}
+.Picture .Picture1 .menu ul li i{
+	width:25px;
+	height:25px;
+	background:url("../images/Sprite.png") no-repeat 0 -167px;
+	display:inline-block;
+	position:absolute;
+	top:7px;
+	left:20px;
+}
+.Picture .Picture1 .menu ul li em{
+	width:25px;
+	height:25px;
+	line-height:25px;
+	display:inline-block;
+	position:absolute;
+	font-weight:bold;
+	top:7px;
+	right:10px;
+}
+/*广告*/
+.Picture .Picture1 .focus{
+	position:absolute;
+	left:320px;
+	top:40px;
+	width:900px;
+	height:460px;
+	background:url("../images/2.png") no-repeat;
+	box-shadow:10px 10px 10px #000;
+}
+.focus span{
+	position:absolute;
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform:perspective(800px) rotateY(0deg);
+}
+.focus span em{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.focus span .front{
+	background:url("../images/2.png") no-repeat; -webkit-transform:translateZ(1px);
+}
+.focus span .back{
+	background:url("../images/3.png") no-repeat; -webkit-transform:translateZ(-1px) scale(-1,1);
+}
+.Picture .Picture1 .focus .l{
+	width:40px;
+	height:40px;
+	background:red;
+	position:absolute;
+	left:10px;
+	top:220px;
+	background:url("../images/Sprite.png") no-repeat 0 -638px;
+	box-shadow:2px 2px 5px #666;
+	border-radius:50%;
+	opacity:0.5;
+	z-index: 999;
+}
+.Picture .Picture1 .focus .r{
+	width:40px;
+	height:40px;
+	background:red;
+	position:absolute;
+	z-index: 999;
+	right:10px;
+	top:220px;
+	background:url("../images/Sprite.png") no-repeat -56px -638px;
+	box-shadow:2px 2px 5px #666;
+	border-radius:50%;
+	opacity:0.5;
 }
