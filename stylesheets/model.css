@@ -170,7 +170,7 @@ body{
 /*全屏大图*/
 .screen{
 	height:460px;
-	background:url("../images/screen3.png") no-repeat center bottom;
+	background:url("../images/screen3.jpg") no-repeat center bottom;
 	overflow:hidden;
 }
 .screen .screen-z{
