@@ -86,39 +86,4 @@ $(function(){
             }
         }
     }
-    /*天气预报*/
-    var oBtn=document.getElementById('btn');
-    var oUl=document.getElementById('ul1');
-    var oTxt=document.getElementById('txt');
-    oBtn.onclick=function(){
-        dataShow();
-    };
-    dataShow();
-    function dataShow(){
-        oUl.innerHTML='';
-        jsonp({
-            url:'http://api.k780.com:88/',
-            data:{
-                app:'weather.future',
-                weaid:oTxt.value,
-                appkey:10003,
-                sign:'b59bc3ef6191eb9f747dd4e83c99f2a4'
-            },
-            cbName:'jsoncallback',
-            success:function(json){
-                var arr=json.result;
-                for(var i=0; i<arr.length; i++){
-                    var oLi=document.createElement('li');
-                    oLi.innerHTML='<li><span>'+arr[i].citynm+'</span>' +
-                    '<span>-'+arr[i].days+'</span>-'+arr[i].week+'</span>' +
-                    '</span>-'+arr[i].temperature+'</span> ' +
-                    '<img src="'+arr[i].weather_icon+'"/> ' +
-                    '<img src="'+arr[i].weather_icon1+'"/> ' +
-                    '</span>-'+arr[i].winp+'</span></li>';
-                    oUl.appendChild(oLi);
-                }
-
-            }
-        })
-    }
 });

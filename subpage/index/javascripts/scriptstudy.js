@@ -19,7 +19,7 @@ $(function(){
     for(var i = 0;i<aLiNav.length;i++){
         aLiNav[i].index =i;
         aLiNav[i].onmouseover = function(){
-            move(oSlide,this.offsetLeft+oSlideL-550);
+            move(oSlide,this.offsetLeft+oSlideL-440);
             for(var j=0; j<aLiNav.length; j++){
                 aLiNav[j].style.color='#333';
             }
