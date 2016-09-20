@@ -2,11 +2,12 @@
 body{
 	overflow-x:hidden
 }
+
 .nav_top{
 	width:100%;
 	height:36px;
-	background:#f6f6f6;
-	border-bottom:2px solid #eee;
+	background:#f7f8f8;
+	border-bottom:2px solid #666;
 	font-size:14px;
 	font-family:'微软雅黑';
 	color:#666;
@@ -49,7 +50,8 @@ body{
 	height:62px;
 	position:relative;
 	margin:auto;
-	background:url(../images/e1.jpg) no-repeat -312px;
+	/*background:url(../images/e1.jpg) no-repeat -312px;*/
+	background:#222;
 	box-shadow:2px 2px 5px #666;
 }
 .nav .head{
@@ -168,15 +170,20 @@ body{
 }
 /*全屏大图*/
 .screen{
-	height:460px;
-	background:url("../images/screen3.jpg") no-repeat center bottom;
+	width:100%;
+	height:550px;
+
 	overflow:hidden;
 }
 .screen .screen-z{
-	width:1220px;
-	height:460px;
+	background:url("../images/screen3.png") no-repeat center bottom;
+	height:550px;
 	margin:auto;
-	position:relative;
+}
+.screen .screen-z2{
+	background:url("../images/screen4.png") no-repeat center bottom;
+	height:550px;
+	margin:auto;
 }
 .screen .screen-z .ship{
 	width:300px;
@@ -296,40 +303,60 @@ body{
 	color:#fff;
 	font-family:'微软雅黑';
 }
-/*主题*/
-.main-describe{
-	width:1000px;
-	height:50px;
-	margin:0 auto;
+/*个人简介*/
+.gr{
+	width:100%;
+	height:450px;
+	background:#264b6e;
+	overflow:hidden;
 }
-.main-describe p{
-	height:50px;
-	line-height:50px;
-	color:#333;
-	font-size:18px;
+.gr .rw{
+	width:300px;
+	height:125px;
+	margin:40px auto;
+}
+.gr p{
+	font-size:25px;
+	color:#fff;
+	text-align:center;
 	font-family:'微软雅黑';
-	font-weight:bold;
-	background:url(../images/bh.png) repeat-x 0 20px;
+	margin-top:20px;
 }
-.main-describe p span{
-	color:deeppink;
+.gr .grjj{
+	width:320px;
+	height:60px;
+	margin:50px auto;
+	overflow:hidden;
 }
-.main{
-	width:1000px;
-	height:500px;
-	margin:0 auto;
+.gr .grjj div a{
+	width:150px;
+	height:60px;
+	display:block;
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+	line-height:60px;
+	font-family:'微软雅黑';
 }
-.main .main-left{
-	width:700px;
-	height:500px;
+.gr .grjj .l{
+	width:150px;
+	height:60px;
+	box-sizing:border-box;
+	border:1px solid #fff;
+	float:left;
+	border-radius:30px;
 }
-.main .main-center{
-	width:40px;
-	height:500px;
-	background:url(../images/bh2.png) repeat-y 10px 0;
+.gr .grjj .r{
+	width:150px;
+	height:60px;
+	box-sizing:border-box;
+	border:1px solid #fff;
+	float:right;
+	border-radius:30px;
 }
-.main .main-right{
-	width:260px;
-	height:500px;
+/*底部*/
+.db{
+	width:100%;
+	height:200px;
+	background:#222;
 }
-

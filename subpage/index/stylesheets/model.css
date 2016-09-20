@@ -1,6 +1,6 @@
 /*导航顶部条*/
 body{
-	background:url(../images/1.jpg);
+	background:#203f5c;
 	overflow-x:hidden
 }
 .nav_top{
@@ -46,9 +46,10 @@ body{
 
 /*导航*/
 .nav{
-	width:1220px;
+	width:1920px;
 	height:62px;
 	position:relative;
+	background:#222;
 }
 .nav .head{
 	width:100px;
@@ -80,7 +81,7 @@ body{
 	width:580px;
 	height:62px;
 	position:absolute;
-	right:0;
+	right:700px;
 	top:0;
 	z-index:1;
 }
@@ -117,13 +118,14 @@ body{
 }
 .content .content-t{
 	width:1000px;
-	height:1000px;
 	border-radius:30px;
 	background:#f6f6f6;
-	overflow:hidden;
+	margin-top:20px;
+	padding-bottom:50px;
+	padding-top:1px;
 }
 .content .content-t .min-nav{
-	width:1000px;
+	width:980px;
 	height:50px;
 	text-align:center;
 	line-height:50px;
@@ -158,11 +160,71 @@ body{
 /*个人简历*/
 .content .content-t .me{
 	width:1000px;
-	height:100%;
 }
 .content .content-t .me h2{
 	font-size:20px;
 	font-family:'微软雅黑';
 	margin:20px 0 0 20px;
 	color:#666;
+}
+
+/*个人简介*/
+.content .content-t .me .referral{
+	width:900px;
+	background:#203f5c;
+	margin:15px auto;
+	border-radius:15px;
+	overflow:hidden;
+}
+.content .content-t .me .referral .r1{
+	width:900px;
+	height:100%;
+	border-bottom:1px solid #6b6b6b;
+	background:#203f5c;
+}
+.content .content-t .me .referral .r1 .r2{
+	width:900px;
+	height:100%;
+	text-align:center;
+	line-height:60px;
+	font-size:23px;
+	font-family:'微软雅黑';
+	color:#fff;
+	cursor:pointer;
+	padding:0 10px;
+	overflow:hidden;
+	position:relative;
+}
+.content .content-t .me .referral .r1 .r2 em{
+	position:absolute;
+	right:40px;
+	font-size:40px;
+	color:#fff;
+	font-weight: bold;
+	font-family:'微软雅黑';
+	top:-3px;
+}
+.content .content-t .me .referral .r1 .r2 div{
+	height:0;
+}
+.content .content-t .me .referral .r1 .r2 span{
+	width:840px;
+	height:0;
+	display:block;
+	border-top:1px solid #fff;
+	padding:20px;
+	font-size:16px;
+	text-align:left;
+	line-height:0;
+}
+.floor{
+	height:50px;
+	width:900px;
+	margin:0 auto;
+}
+.content .content-t .gr1{
+	height:250px;
+	width:900px;
+	margin:0 auto;
+	border-radius:15px;
 }

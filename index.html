@@ -5,10 +5,39 @@
   <title></title>
   <link href="stylesheets/base.css" rel="stylesheet">
   <link href="stylesheets/model.css" rel="stylesheet">
+  <link href="stylesheets/swiper-3.3.1.min.css" rel="stylesheet">
   <script src="javascripts/jquery-1.7.2.js"></script>
+  <script src="javascripts/swiper-3.3.1.min.js"></script>
   <script src="javascripts/move.js"></script>
   <script src="javascripts/script.js"></script>
   <script src="javascripts/jsonp.js"></script>
+    <style>
+        .swiper-container {
+            background:#ccc;
+            text-align:center;
+            line-height:10px;
+            font-size:50px;
+        }
+
+    </style>
+    <script>
+        window.onload = function(){
+            var mySwiper = new Swiper ('.swiper-container', {
+                // direction: 'vertical',  上下滑动
+                loop: true,  //无缝
+                effect : 'cube',
+                // 如果需要分页器
+                pagination: '.swiper-pagination',
+                autoplay: 2000,
+                // 如果需要前进后退按钮
+                   nextButton: '.swiper-button-next',
+                   prevButton: '.swiper-button-prev'
+
+                // 如果需要滚动条
+               /* scrollbar: '.swiper-scrollbar'*/
+            });
+        }
+    </script>
 
 </head>
 <body>
@@ -24,7 +53,7 @@
         <ul class="nav_right fr">
             <li style="color:#fff;"><a href="index.html">首页</a></li>
             <li><a href="subpage/index/index.html">关于我</a></li>
-            <li><a href="#">闲言碎语</a></li>
+            <li><a href="#">模板(未开放)</a></li>
             <li><a href="#">小游戏</a></li>
            <!-- <li><a href="#">模板分享</a></li>-->
             <li><a href="subpage/index/indexstudy.html">我的作品</a></li>
@@ -38,17 +67,14 @@
         </div>
     </div>
 <!--全屏大图-->
-    <div class="screen">
-         <div class="screen-z">
-             <div class="content">
-                 <p>如果惧怕前面跌宕的山岩，生命就永远只能是死水一潭。</p>
-                 <p>即使道路坎坷不平，车轮也要前进；即使江河波涛汹涌，船只也航行。</p>
-             </div>
-             <div class="ship">
-                 <img src="images/screen.png"/>
-                 <div class="ship-1">赶快上我的诺亚方舟<br/>逃离世界末日！</div>
-             </div>
-         </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+             <div class="swiper-slide"><img src="images/screen3.png"/></div>
+             <div class="swiper-slide"><img src="images/screen4.png"/></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
 <!--产品推荐-->
     <div class="product">
@@ -93,18 +119,19 @@
             </ul>
         </div>
     </div>
-    <!---->
-    <div class="main-describe">
-        <p>推荐<span>观看</span></p>
-    </div>
-    <div class="main clearfix">
-        <div class="main-left fl">
-
+    <!--个人简介-->
+    <div class="gr">
+        <div class="rw"><img src="images/rw.png"/></div>
+        <p>hi，我叫谭高强，是一名前端工程师，也是一名设计师，熟悉HTML、CSS、CSS3,<br/>精通响应式设计，搭建前端自动化流程，熟悉html5应用打包原生app...</p>
+        <div class="grjj">
+            <div class="l"><a href="subpage/index/index.html">个人简介</a></div>
+            <div class="r"><a href="subpage/index/indexstudy.html">项目作品</a></div>
         </div>
-        <div class="main-center fl"></div>
-        <div class="main-right fr"></div>
     </div>
-<!--时间-->
-    <div class="time"></div>
+    <!--底部-->
+    <div class="db">
+
+    </div>
+
 </body>
 </html>

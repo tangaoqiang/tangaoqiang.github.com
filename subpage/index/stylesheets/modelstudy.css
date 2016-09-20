@@ -1,6 +1,6 @@
 /*导航顶部条*/
 body{
-	background:url(../images/1.jpg);
+	background:#203f5c;
 	overflow-x:hidden
 }
 .nav_top{
@@ -46,9 +46,10 @@ body{
 
 /*导航*/
 .nav{
-	width:1220px;
+	width:1920px;
 	height:62px;
 	position:relative;
+	background:#222;
 }
 .nav .head{
 	width:100px;
@@ -80,7 +81,7 @@ body{
 	width:580px;
 	height:62px;
 	position:absolute;
-	right:0;
+	right:700px;
 	top:0;
 	z-index:1;
 }
@@ -113,7 +114,7 @@ body{
 .content{
 	width:1000px;
 	height:100%;
-	margin:auto;
+	margin:0 auto;
 }
 .content .content-t{
 	width:1000px;
@@ -121,6 +122,7 @@ body{
 	border-radius:30px;
 	background:#f6f6f6;
 	overflow:hidden;
+	margin-top:20px;
 }
 .content .content-t .min-nav{
 	width:1000px;
@@ -171,17 +173,41 @@ body{
 	width:970px;
 	height:954px;
 	margin:0 auto;
-	overflow:hidden;
 }
 .content .content-t .me .show ol{
 	height:954px;
+	overflow:hidden;
 }
 .content .content-t .me .show ol li{
 	width:311px;
 	height:300px;
 	background:#666;
 	margin-right:18px;
+	float:left;
 	margin-top:18px;
+	position:relative;
+	overflow:hidden;
+	display:none;
+}
+.content .content-t .me .show ol li span{
+	position:absolute;
+	left:-311px;
+	top:0;
+	width:311px;
+	height:300px;
+	background:url('../images/lj.png') no-repeat;
+
+}
+.content .content-t .me .show ol li span a{
+	width:311px;
+	height:100px;
+	padding-top:200px;
+	display:block;
+	color:#fff;
+	font-family:'微软雅黑';
+	text-align:center;
+	font-size:30px;
+
 }
 /*页数*/
 .content .content-t .me .page{

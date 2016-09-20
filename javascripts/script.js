@@ -50,7 +50,7 @@ $(function(){
     var oShip = document.querySelector('.screen .screen-z .ship');
     var oShipImg = document.querySelector('.screen .screen-z .ship img');
     var oShip1 = document.querySelector('.screen .screen-z .ship .ship-1');
-    oShip.style.margin = '220px auto';
+   /* oShip.style.margin = '220px auto';
     oShipImg.style.width = '0';
     oShipImg.style.height = '0';
     setTimeout(function(){
@@ -68,7 +68,7 @@ $(function(){
     };
     oShip.onmouseleave = function(){
         oShip1.style.display= 'none';
-    };
+    };*/
     var productA = document.querySelectorAll('.product .product-content ul li a');
     var productSpan = document.querySelectorAll('.product .product-content ul li span');
     var productAImg = document.querySelectorAll('.product .product-content ul li a img');

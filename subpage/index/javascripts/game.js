@@ -19,7 +19,7 @@ $(function(){
     for(var i = 0;i<aLiNav.length;i++){
         aLiNav[i].index =i;
         aLiNav[i].onmouseover = function(){
-            move(oSlide,this.offsetLeft+oSlideL-440);
+            move(oSlide,this.offsetLeft+oSlideL-330);
             for(var j=0; j<aLiNav.length; j++){
                 aLiNav[j].style.color='#333';
             }
@@ -137,13 +137,13 @@ $(function(){
                 aPage[j].style.background = '#ccc';
             }
             this.style.background = '#666';
-             for(var j=0; j<aOlLi.length; j++){
-                 if(j>=this.index*9 && j<(this.index*9+aOlLi.length)){
-                     aOlLi[j].style.display = 'block';
-                 }else{
-                     aOlLi[j].style.display = 'none';
-                 }
-             }
+            for(var j=0; j<aOlLi.length; j++){
+                if(j>=this.index*9 && j<(this.index*9+aOlLi.length)){
+                    aOlLi[j].style.display = 'block';
+                }else{
+                    aOlLi[j].style.display = 'none';
+                }
+            }
         }
     }
 });
