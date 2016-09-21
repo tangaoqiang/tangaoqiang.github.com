@@ -50,25 +50,6 @@ $(function(){
     var oShip = document.querySelector('.screen .screen-z .ship');
     var oShipImg = document.querySelector('.screen .screen-z .ship img');
     var oShip1 = document.querySelector('.screen .screen-z .ship .ship-1');
-   /* oShip.style.margin = '220px auto';
-    oShipImg.style.width = '0';
-    oShipImg.style.height = '0';
-    setTimeout(function(){
-        oShip1.style.opacity='0';
-        oShipImg.style.opacity = '0';
-    },20000);
-    oShip.onmouseenter = function(){
-        oShip1.style.display= 'block';
-        setTimeout(function(){
-            oShip1.style.WebkitTransform = 'rotate(360deg)';
-            oShip1.style.MozTransform = 'rotate(360deg)';
-            oShip1.style.mstransform = 'rotate(360deg)';
-            oShip1.style.transform = 'rotate(360deg)';
-        },300);
-    };
-    oShip.onmouseleave = function(){
-        oShip1.style.display= 'none';
-    };*/
     var productA = document.querySelectorAll('.product .product-content ul li a');
     var productSpan = document.querySelectorAll('.product .product-content ul li span');
     var productAImg = document.querySelectorAll('.product .product-content ul li a img');
@@ -85,5 +66,19 @@ $(function(){
                 productSpan[j].style.opacity = 0;
             }
         }
+    }
+    /*个人简介，项目作品*/
+    var oGrjj = document.querySelector('.grjj');
+    var aGrdiv = document.querySelectorAll('.grjj div');
+    var aGrspan = document.querySelectorAll('.grjj div span');
+    for(var i=0; i<aGrdiv.length; i++){
+        aGrdiv[i].index = i;
+        aGrspan[i].style.transition = '0.3s all ease';
+        aGrdiv[i].onmouseenter = function(){
+            aGrspan[this.index].style.left = 0;
+        };
+        aGrdiv[i].onmouseleave = function(){
+            aGrspan[this.index].style.left = '-152px';
+        };
     }
 });
